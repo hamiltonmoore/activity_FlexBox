@@ -1,0 +1,77 @@
+/*
+    NAV ELEMENT BACKGROUND : orange
+    NAV ELEMENT HOVER      : red
+
+    BREAKPOINTS
+
+    tablet  : 600px
+    desktop : 900px
+*/
+
+/*** Default Mobile Styles ****************************/
+body{
+    text-align: center;
+    font-family: "Comic Sans MS", "Comic Sans", sans-serif; 
+}
+
+nav{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+   
+}
+nav a{
+    border: 1px solid orange;
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: .2em;
+}
+
+/**** Tablet Styles ***********************************/
+
+@media (min-width: 600px) {
+    nav {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }    
+    
+    nav a {
+       /* width: 45%; */
+       flex-basis: 45%;
+       margin-top: .2em;
+
+    }
+}
+
+
+
+
+
+
+
+
+/**** Desktop Styles ***********************************/
+
+@media (min-width: 900px) {
+    nav {
+        flex-direction: row;
+    }
+
+    nav a {
+        /* width: 20%; */
+        flex-basis: 20%;
+    }
+}
+
+/* why doesn't "desktop styles" pick up the format of nav a in the mobile styling? */ 
+
+
+
+
+
+
+
